@@ -1,17 +1,17 @@
-const input = document.querySelector('.password-input')
-const error = document.querySelector('error-message')
-const timeout = null
+const input = document.querySelector('.password-input');
+const error = document.querySelector('.error-message');
+const timeout = null;
 
 const showError = message => {
-    error.style.color = '#C91E1E'
-    error.style.display = 'block'
-    error.innerHTML = message
-}
+	error.style.color = '#C91E1E';
+	error.style.display = 'block';
+	error.innerHTML = message;
+};
 
 const showPass = message => {
-    error.style.color = '#119822'
-    error.innerHTML = message
-}
+	error.style.color = '#119822';
+	error.innerHTML = message;
+};
 
 const validatePassword = password => {
 	const lowerCaseRegex = new RegExp('^(?=.*[a-z])');
